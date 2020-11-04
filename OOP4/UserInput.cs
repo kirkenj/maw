@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace OOP4
 {
@@ -11,7 +8,7 @@ namespace OOP4
 
         static public int AnInt(String inputMsg = "")
         {
-            
+
             while (true)
             {
                 try
@@ -24,8 +21,8 @@ namespace OOP4
                     OutlnConsole.Print(ex.Message);
                 }
             }
-            
-            
+
+
         }
 
         static public double ADouble(string inputMsg = "")
@@ -45,13 +42,13 @@ namespace OOP4
                 }
             }
         }
-        static public string AString(string inputMsg="")
+        static public string AString(string inputMsg = "")
         {
             OutlnConsole.Print(inputMsg);
             m = Console.ReadLine();
             return m;
         }
- 
+
 
         static public double[] ADoubleArray(string inputMsg = "")
         {
@@ -63,7 +60,7 @@ namespace OOP4
             {
                 ret[i] = Convert.ToDouble(mas[i]);
             }
-            return ret;            
+            return ret;
         }
     }
 }

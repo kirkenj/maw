@@ -1,7 +1,4 @@
-﻿using OOP4.CommonTasks;
-using System;
-
-namespace OOP4
+﻿namespace OOP4
 {
     class Program
     {

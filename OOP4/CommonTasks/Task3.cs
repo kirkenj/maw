@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOP4.CommonTasks
+﻿namespace OOP4.CommonTasks
 {
     class Task3
     {
@@ -13,7 +9,7 @@ namespace OOP4.CommonTasks
             OutlnConsole.Print(START_MSG);
             OutlnConsole.Print(MAS);
             int inp = UserInput.AnInt("Input a number");
-            foreach(int l in MAS)
+            foreach (int l in MAS)
             {
                 if (inp % l == 0)
                 {

@@ -1,10 +1,8 @@
-﻿using System; 
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmm
 namespace OOP4
 {
-     class OutlnConsole
+    class OutlnConsole
     {
         public static void Print(string msg)
         {
@@ -16,7 +14,7 @@ namespace OOP4
 
         public static void Print<T>(T[] mas)
         {
-           OutlnConsole.Print(string.Join(", ", mas));
-        } 
+            OutlnConsole.Print(string.Join(", ", mas));
+        }
     }
 }

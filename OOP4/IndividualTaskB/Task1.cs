@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOP4.IndividualTaskB
+﻿namespace OOP4.IndividualTaskB
 {
     class Task1
     {
@@ -13,7 +9,7 @@ namespace OOP4.IndividualTaskB
         {
             OutlnConsole.Print(START_MSG);
             int inp = UserInput.AnInt("Input the number of the day in week");
-            if(inp<7 && inp>0)
+            if (inp < 7 && inp > 0)
             {
                 OutlnConsole.Print(WEEK[inp - 1]);
             }

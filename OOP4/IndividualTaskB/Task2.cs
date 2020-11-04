@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOP4.IndividualTaskB
+﻿namespace OOP4.IndividualTaskB
 {
     class Task2
     {
@@ -13,7 +9,7 @@ namespace OOP4.IndividualTaskB
             string msg;
             OutlnConsole.Print(START_MSG);
             int m = UserInput.AnInt("Input mark:");
-            
+
             //заменить ифы на switch - case
             if (m < 0 || m > 10)
             {

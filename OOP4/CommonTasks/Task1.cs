@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOP4.CommonTasks
+﻿namespace OOP4.CommonTasks
 {
 
     class Task1
@@ -14,12 +10,12 @@ namespace OOP4.CommonTasks
         const int FIRS_PERIOD = 200;
         const int SECOND_PERIOD = 300;
         const int START_HEADS = 3;
-        const string START_MSG= "Dragon's heads:\nInput dragon's age and amount of his heads will be printed.\n";
+        const string START_MSG = "Dragon's heads:\nInput dragon's age and amount of his heads will be printed.\n";
 
         public static int Run()
         {
             int age;
-            int ret=0;
+            int ret = 0;
             //3rd period starts after 2nd
             OutlnConsole.Print(START_MSG + $" When a dragon is born he has {START_HEADS} heads.");
             age = UserInput.AnInt("Input Dragon age:");
@@ -27,15 +23,15 @@ namespace OOP4.CommonTasks
             {
                 if (age <= FIRS_PERIOD)
                 {
-                    ret= START_HEADS + age * HEADS_PER_YEAR_1ST_PERIOD;
+                    ret = START_HEADS + age * HEADS_PER_YEAR_1ST_PERIOD;
                 }
                 else if (age <= SECOND_PERIOD)
                 {
-                    ret= START_HEADS + FIRS_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + (age - FIRS_PERIOD) * HEADS_PER_YEAR_2ND_PERIOD;
+                    ret = START_HEADS + FIRS_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + (age - FIRS_PERIOD) * HEADS_PER_YEAR_2ND_PERIOD;
                 }
                 else if (age > SECOND_PERIOD)
                 {
-                    ret= START_HEADS + FIRS_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRS_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3DP_PERIOD;
+                    ret = START_HEADS + FIRS_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRS_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3DP_PERIOD;
                 }
 
                 OutlnConsole.Print($"Amount of Dragon's heads is {ret}");
