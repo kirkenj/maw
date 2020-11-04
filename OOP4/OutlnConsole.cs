@@ -1,7 +1,7 @@
 ﻿using System; 
 using System.Collections.Generic;
 using System.Text;
-
+//mmmmmmmmmmmmmmmmmmmmmmmmmmmm
 namespace OOP4
 {
      class OutlnConsole
