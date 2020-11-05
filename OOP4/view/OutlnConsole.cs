@@ -2,14 +2,11 @@
 
 namespace OOP4
 {
-    class OutlnConsole
+    static class OutlnConsole
     {
-        public static void Print(string msg)
+        public static void Print<T>(T msg)
         {
-            if (msg.Length > 0)
-            {
-                Console.WriteLine(msg);
-            }
+            Console.WriteLine(msg);
         }
 
         public static void Print<T>(T[] mas)
