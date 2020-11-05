@@ -7,16 +7,8 @@ namespace OOP4.IndividualTaskB
         private static string[] Convert(int inp)
         {
             int ost = inp % 10;
-            switch (ost)
-            {
-                case 1: Console.WriteLine();
-                case 1:
-                case 1:
-                case 1:
-                case 1:
-                case 1:
-                case 1:
-            }
+            Console.WriteLine("Ента залупень работает")
+            
         }
 
 
