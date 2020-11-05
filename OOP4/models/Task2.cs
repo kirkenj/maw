@@ -8,7 +8,7 @@
         {
             string msg;
             //OutlnConsole.Print(START_MSG);
-            int m = UserInput.AnInt("Input mark:");
+            int m = UserInput.AnInt();
 
             //заменить ифы на switch - case
             if (m < 0 || m > 10)

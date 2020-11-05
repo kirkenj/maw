@@ -59,6 +59,11 @@ namespace OOP4.models
             this.heads = ret;
         }
 
+        public int getEyes()
+        {
+            return 2 * this.heads;
+        }
+
         public int getHeads()
         {
             if (this.heads == 0)

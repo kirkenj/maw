@@ -8,7 +8,7 @@
         {
             //OutlnConsole.Print(START_MSG);
             //OutlnConsole.Print(MAS);
-            int inp = UserInput.AnInt("Input a number");
+            int inp = UserInput.AnInt();
             foreach (int l in MAS)
             {
                 if (inp % l == 0)

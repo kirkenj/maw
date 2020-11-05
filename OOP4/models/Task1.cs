@@ -8,7 +8,7 @@
         public static void Run()
         {
             //OutlnConsole.Print(START_MSG);
-            int inp = UserInput.AnInt("Input the number of the day in week");
+            int inp = UserInput.AnInt();
             if (inp < 7 && inp > 0)
             {
                 //OutlnConsole.Print(WEEK[inp - 1]);
