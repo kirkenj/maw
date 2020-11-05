@@ -2,7 +2,7 @@
 
 namespace OOP4
 {
-    class UserInput
+    static class UserInput
     {
         static string m;
 
