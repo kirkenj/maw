@@ -7,15 +7,15 @@
 
         public static void Run()
         {
-            OutlnConsole.Print(START_MSG);
+            //OutlnConsole.Print(START_MSG);
             int inp = UserInput.AnInt("Input the number of the day in week");
             if (inp < 7 && inp > 0)
             {
-                OutlnConsole.Print(WEEK[inp - 1]);
+                //OutlnConsole.Print(WEEK[inp - 1]);
             }
             else
             {
-                OutlnConsole.Print("Inputed number is out of range");
+                //OutlnConsole.Print("Inputed number is out of range");
             }
         }
     }
