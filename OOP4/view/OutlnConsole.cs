@@ -1,5 +1,5 @@
 ﻿using System;
-//mmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
 namespace OOP4
 {
     class OutlnConsole

@@ -6,9 +6,11 @@ namespace OOP4.IndividualTaskB
     {
         private static string[] Convert(int inp)
         {
-            int ost = inp % 10;
-            Console.WriteLine("Ента залупень работает")
-            
+
+            int ost = 0;
+            ost = inp % 10;
+            Console.WriteLine("Ента залупень работает");
+            return ost.ToString();
         }
 
 
