@@ -5,15 +5,16 @@ namespace OOP4
     static class UserInput
     {
         static string m;
+        static char c;
 
-        static public int AnInt(String inputMsg = "")
+        static public int AnInt()
         {
 
             while (true)
             {
                 try
                 {
-                    m = UserInput.AString(inputMsg);
+                    m = UserInput.AString();
                     return Convert.ToInt32(m);
                 }
                 catch (Exception ex)
@@ -25,14 +26,14 @@ namespace OOP4
 
         }
 
-        static public double ADouble(string inputMsg = "")
+        static public double ADouble()
         {
             double ret;
             while (true)
             {
                 try
                 {
-                    m = UserInput.AString(inputMsg);
+                    m = UserInput.AString();
                     ret = Convert.ToDouble(m);
                     return ret;
                 }
@@ -42,17 +43,16 @@ namespace OOP4
                 }
             }
         }
-        static public string AString(string inputMsg = "")
+        static public string AString()
         {
-            OutlnConsole.Print(inputMsg);
             m = Console.ReadLine();
             return m;
         }
 
 
-        static public double[] ADoubleArray(string inputMsg = "")
+        static public double[] ADoubleArray()
         {
-            m = UserInput.AString(inputMsg);
+            m = UserInput.AString();
             string[] mas = m.Split();
             int len = mas.Length;
             double[] ret = new double[len];
@@ -61,6 +61,19 @@ namespace OOP4
                 ret[i] = Convert.ToDouble(mas[i]);
             }
             return ret;
+        }
+
+        static public char AChar(){
+            m = UserInput.AString();
+            if (m.Length == 1)
+            {
+                c = m[0];
+            }
+            else
+            {
+                c = AChar();
+            }
+            return c;
         }
     }
 }
