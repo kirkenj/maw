@@ -8,9 +8,9 @@ namespace OOP4.CommonTasks
 
         public static int Run()
         {
-            OutlnConsole.Print(Start_MSG);
+            //OutlnConsole.Print(Start_MSG);
             double[] arr = UserInput.ADoubleArray();
-            OutlnConsole.Print($"Maximal element is {arr.Max()}");
+            //OutlnConsole.Print($"Maximal element is {arr.Max()}");
             return 0;
         }
     }

@@ -7,7 +7,7 @@
         public static void Run()
         {
             string msg;
-            OutlnConsole.Print(START_MSG);
+            //OutlnConsole.Print(START_MSG);
             int m = UserInput.AnInt("Input mark:");
 
             //заменить ифы на switch - case
@@ -46,7 +46,7 @@
                     msg = "Good";
                 }
             }
-            OutlnConsole.Print(msg);
+            //OutlnConsole.Print(msg);
         }
     }
 }

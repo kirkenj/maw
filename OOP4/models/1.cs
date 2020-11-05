@@ -34,15 +34,15 @@
                     ret = START_HEADS + FIRS_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRS_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3DP_PERIOD;
                 }
 
-                OutlnConsole.Print($"Amount of Dragon's heads is {ret}");
+                //OutlnConsole.Print($"Amount of Dragon's heads is {ret}");
             }
             else if (age == 0)
             {
-                OutlnConsole.Print($"Oh baby dragon ^^\namount of his heads is {START_HEADS}");
+                //OutlnConsole.Print($"Oh baby dragon ^^\namount of his heads is {START_HEADS}");
             }
             else
             {
-                OutlnConsole.Print("WRONG INPUT\n");
+                //OutlnConsole.Print("WRONG INPUT\n");
             }
             return 0;
         }

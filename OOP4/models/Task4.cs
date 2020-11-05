@@ -1,5 +1,5 @@
 ﻿using System;
-
+/*
 namespace OOP4.IndividualTaskB
 {
     class Task4
@@ -32,3 +32,4 @@ namespace OOP4.IndividualTaskB
         }
     }
 }
+*/
