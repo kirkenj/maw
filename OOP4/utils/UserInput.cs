@@ -1,11 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using System;
 
 namespace OOP4
 {
     static class UserInput
     {
-        static string m;
-        static char c;
 
         public static int AnInt()
         {
@@ -14,8 +13,7 @@ namespace OOP4
             {
                 try
                 {
-                    m = UserInput.AString();
-                    return Convert.ToInt32(m);
+                    return Convert.ToInt32(AString());
                 }
                 catch (Exception ex)
                 {
@@ -28,14 +26,11 @@ namespace OOP4
 
         public static double ADouble()
         {
-            double ret;
             while (true)
             {
                 try
                 {
-                    m = UserInput.AString();
-                    ret = Convert.ToDouble(m);
-                    return ret;
+                    return Convert.ToDouble(AString());
                 }
                 catch (Exception ex)
                 {
@@ -44,36 +39,42 @@ namespace OOP4
             }
         }
         public static string AString()
-        {
-            m = Console.ReadLine();
-            return m;
+        {   
+            return Console.ReadLine();
         }
 
 
         public static double[] ADoubleArray()
         {
-            m = UserInput.AString();
-            string[] mas = m.Split();
-            int len = mas.Length;
-            double[] ret = new double[len];
-            for (int i = 0; i < mas.Length; i++)
+            while (true)
             {
-                ret[i] = Convert.ToDouble(mas[i]);
+                try
+                {
+                    string m = UserInput.AString();
+                    string[] mas = m.Split();
+                    int len = mas.Length;
+                    double[] ret = new double[len];
+                    for (int i = 0; i < mas.Length; i++)
+                    {
+                        ret[i] = Convert.ToDouble(mas[i]);
+                    }
+                    return ret;
+                }
+                catch (Exception ex)
+                {
+                    OutlnConsole.Print(ex.Message);
+                }
             }
-            return ret;
+            
         }
 
         public static char AChar(){
-            m = UserInput.AString();
-            if (m.Length == 1)
+            string m = "err";
+            while (m.Length!=1)
             {
-                c = m[0];
+                m = AString();
             }
-            else
-            {
-                c = AChar();
-            }
-            return c;
+            return m[0];
         }
     }
 }

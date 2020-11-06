@@ -2,7 +2,7 @@ namespace OOP4.models
 {
     public static class Logic6
     {
-        public static string monthName(int num)
+        public static string MonthName(int num)
         {
             switch (num)
             {

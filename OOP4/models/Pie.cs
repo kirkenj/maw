@@ -11,7 +11,7 @@ namespace OOP4.models
             this.surprise = r.Next(1,5);
         }
 
-        public int getSurprise(){
+        public int GetSurprise(){
             return this.surprise;
         }
     }

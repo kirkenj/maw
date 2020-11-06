@@ -11,7 +11,7 @@
             this.heads = 3;
         }
 
-        public void setAge(int set)
+        public void SetAge(int set)
         {
             if (set >= 0)
             {
@@ -19,21 +19,21 @@
             }
         }
 
-        public int getAge()
+        public int GetAge()
         {
             return this.age;
         }
-        public int getEyes()
+        public int GetEyes()
         {
             return 2 * this.heads;
         }
 
-        public int getHeads()
+        public int GetHeads()
         {
             return this.heads;
         }
 
-        public void setHeads(int heads)
+        public void SetHeads(int heads)
         {
             this.heads = heads;
         }

@@ -9,11 +9,11 @@ namespace OOP4.models
             this.value = 1;
         }
 
-        public int getValue(){
+        public int GetValue(){
             return this.value;
         }
 
-        public void setValue(int a){
+        public void SetValue(int a){
             this.value = a;
         }
     }

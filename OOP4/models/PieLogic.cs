@@ -2,9 +2,9 @@ namespace OOP4.models
 {
     public static class PieLogic
     {
-        public static string eatPie(Pie pie)
+        public static string EatPie(Pie pie)
         {
-            switch (pie.getSurprise())
+            switch (pie.GetSurprise())
             {
                 case 1:
                     return "raisins in the pie";

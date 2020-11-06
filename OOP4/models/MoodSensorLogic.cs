@@ -4,15 +4,15 @@ namespace OOP4.models
 {
     public static class MoodSensorLogic
     {
-        private static int generateMood()
+        private static int GenerateMood()
         {
             Random r = new Random();
             return r.Next(1,4);
         }
 
-        public static string getMood()
+        public static string GetMood()
         {
-            int mood = generateMood();
+            int mood = GenerateMood();
             switch (mood)
             {
                 case 1:

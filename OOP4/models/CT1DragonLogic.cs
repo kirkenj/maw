@@ -2,7 +2,7 @@
 {
     public static class CT1DragonLogic
     {
-        public static int countHeadsForAge(CT1Dragon dragon)
+        public static int CountHeadsForAge(CT1Dragon dragon)
         {
             const int HEADS_PER_YEAR_1ST_PERIOD = 3;
             const int HEADS_PER_YEAR_2ND_PERIOD = 2;
@@ -13,7 +13,7 @@
             //3rd period starts after 2nd
 
             const int START_HEADS = 3;
-            int age = dragon.getAge();
+            int age = dragon.GetAge();
             int ret = 0;
             
 
