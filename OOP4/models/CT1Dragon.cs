@@ -3,40 +3,49 @@
     public class CT1Dragon
     {
         private int age;
-        private int heads;
 
-        public CT1Dragon()
+        public int Age
         {
-            this.age = 0;
-            this.heads = 3;
-        }
-
-        public void SetAge(int set)
-        {
-            if (set >= 0)
+            get
             {
-                this.age = set;
+                return age;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    age = value;
+                }
+            }
+        }
+        private int heads;
+        public int Heads
+        {
+            get
+            {
+                return heads;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    heads = value;
+                }
             }
         }
 
-        public int GetAge()
+        public int Eyes
         {
-            return this.age;
-        }
-        public int GetEyes()
-        {
-            return 2 * this.heads;
-        }
-
-        public int GetHeads()
-        {
-            return this.heads;
+            get
+            {
+                return heads * 2;
+            }
         }
 
-        public void SetHeads(int heads)
+        public CT1Dragon()
         {
-            this.heads = heads;
+            age = 0;
+            heads = 3;
         }
-
     }
 }

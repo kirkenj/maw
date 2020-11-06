@@ -6,14 +6,14 @@
         {
             const int HEADS_PER_YEAR_1ST_PERIOD = 3;
             const int HEADS_PER_YEAR_2ND_PERIOD = 2;
-            const int HEADS_PER_YEAR_3DP_PERIOD = 1;
+            const int HEADS_PER_YEAR_3RD_PERIOD = 1;
 
             const int FIRST_PERIOD = 200;
             const int SECOND_PERIOD = 300;
             //3rd period starts after 2nd
 
             const int START_HEADS = 3;
-            int age = dragon.GetAge();
+            int age = dragon.Age;
             int ret = 0;
             
 
@@ -29,7 +29,7 @@
                 }
                 else if (age > SECOND_PERIOD)
                 {
-                    ret = START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRST_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3DP_PERIOD;
+                    ret = START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRST_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3RD_PERIOD;
                 }
             }
             return ret;

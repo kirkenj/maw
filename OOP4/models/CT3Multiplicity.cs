@@ -4,6 +4,7 @@ namespace OOP4.models
 {
     public static class CT3Multiplicity
     {
+        
         static int[] PRIME_MAS = { 2, 3, 5, 7, 11, 17, 19 };
         public static int[] GetMultiplePrimeForInp(int inp)
         {

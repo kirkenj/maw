@@ -11,9 +11,9 @@ namespace OOP4
 
             OutlnConsole.Print("Input Dragon's age: ");
             int m = UserInput.AnInt();
-            dragon.SetAge(m);
-            dragon.SetHeads(CT1DragonLogic.CountHeadsForAge(dragon));
-            OutlnConsole.Print($"He has {dragon.GetHeads()} heads with {dragon.GetEyes()} eyes");
+            dragon.Age=m;
+            dragon.Heads = CT1DragonLogic.CountHeadsForAge(dragon);
+            OutlnConsole.Print($"He has {dragon.Heads} heads with {dragon.Eyes} eyes");
 
             
             double[] arr = UserInput.ADoubleArray();
