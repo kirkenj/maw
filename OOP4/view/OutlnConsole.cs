@@ -11,7 +11,7 @@ namespace OOP4
 
         public static void Print<T>(T[] mas)
         {
-            OutlnConsole.Print(string.Join(", ", mas));
+            Console.WriteLine(string.Join(", ", mas));
         }
     }
 }
