@@ -1,6 +1,6 @@
 namespace OOP4.models
 {
-    public static class 6Logic
+    public static class Logic6
     {
         public static string monthName(int num)
         {
