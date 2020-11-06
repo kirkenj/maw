@@ -7,7 +7,7 @@ namespace OOP4
         static string m;
         static char c;
 
-        static public int AnInt()
+        public static int AnInt()
         {
 
             while (true)
@@ -26,7 +26,7 @@ namespace OOP4
 
         }
 
-        static public double ADouble()
+        public static double ADouble()
         {
             double ret;
             while (true)
@@ -43,14 +43,14 @@ namespace OOP4
                 }
             }
         }
-        static public string AString()
+        public static string AString()
         {
             m = Console.ReadLine();
             return m;
         }
 
 
-        static public double[] ADoubleArray()
+        public static double[] ADoubleArray()
         {
             m = UserInput.AString();
             string[] mas = m.Split();
@@ -63,7 +63,7 @@ namespace OOP4
             return ret;
         }
 
-        static public char AChar(){
+        public static char AChar(){
             m = UserInput.AString();
             if (m.Length == 1)
             {
