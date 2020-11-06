@@ -6,12 +6,12 @@ using System.Text;
 
 namespace OOP4.models
 {
-    class CT1_Dragon
+    class CT1Dragon
     {
         private int age;
         private int heads;
 
-        public CT1_Dragon()
+        public CT1Dragon()
         {
             this.age = 0;
             this.heads = 3;
