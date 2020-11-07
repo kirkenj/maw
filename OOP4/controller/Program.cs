@@ -42,8 +42,8 @@ namespace OOP4
             //    OutlnConsole.Print(B2MarkRequestLogic.GetRequestForMark(7));
             //    OutlnConsole.Print(B3CardsLogic.GetCardForNumbers(1, 8));
             //    OutlnConsole.Print(B4NumberInWordsLogic.GetStringOfNumber(110));
-            
-            
+
+
             //OutlnConsole.Print(B5Logic.GetDaysInMonthNumber(12));
             //OutlnConsole.Print(B6Logic.GetMonthNameForNumber(12));
 
@@ -57,7 +57,10 @@ namespace OOP4
             //    OutlnConsole.Print("Input in format: *Operand_1* *Action* *Operand_2*");
             //}
 
+            //OutlnConsole.Print(B8AstrologyLogic.GetZnakForBirthDay(23, 10));
 
+            //OutlnConsole.Print(B4NumberInWordsLogic.GetStringOfNumber(999));
+            //OutlnConsole.Print(B4NumberInWordsLogic.GetStringOfNumber(1000));
         }
     }
 }
