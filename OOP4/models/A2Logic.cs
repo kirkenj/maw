@@ -4,31 +4,19 @@ namespace OOP4.models
     {
         public static bool IsVowel(char c)
         {
-            switch (c)
+            switch (c.ToString().ToLower())
             {
-                case 'a':
+                case "a":
                     return true;
-                case 'e':
+                case "e":
                     return true;
-                case 'i':
+                case "i":
                     return true;
-                case 'o':
+                case "o":
                     return true;
-                case 'u':
+                case "u":
                     return true;
-                case 'y':
-                    return true;
-                case 'A':
-                    return true;
-                case 'E':
-                    return true;
-                case 'I':
-                    return true;
-                case 'O':
-                    return true;
-                case 'U':
-                    return true;
-                case 'Y':
+                case "y":
                     return true;
                 default:
                     return false;
