@@ -12,7 +12,7 @@ namespace OOP4.models
         {
             if (age >= BOTTOM_AGE && age <= UPPER_AGE)
             {
-                return $"{B9StringForNumber.GetStringForNumber(age)} y.o.";
+                return $"{B9StringForNumber.GetStringForNumber(age)} Y.O.";
             }
             return $"Age more than {UPPER_AGE} or less than {BOTTOM_AGE} is counted incorrect";
         }
