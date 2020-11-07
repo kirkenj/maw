@@ -1,13 +1,13 @@
 namespace OOP4.models
 {
-    public static class Logic6
+    public static class B6Logic
     {
-        public static string MounthName(int num)
+        public static string MonthName(int num)
         {
             string[]  mounth = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
             if (num >= 1 && num <= mounth.Length)
             {
-                return mounth[num];
+                return mounth[num-1];
             }
             else
             {

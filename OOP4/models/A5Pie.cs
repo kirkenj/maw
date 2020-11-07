@@ -2,11 +2,11 @@ using System;
 
 namespace OOP4.models
 {
-    public class Pie
+    public class A5Pie
     {
         private int surprise;
 
-        public Pie(){
+        public A5Pie(){
             Random r = new Random();
             this.surprise = r.Next(1,5);
         }

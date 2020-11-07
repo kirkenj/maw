@@ -2,7 +2,7 @@ using System;
 
 namespace OOP4.models
 {
-    public static class MoodSensorLogic
+    public static class A3MoodSensorLogic
     {
         private static int GenerateMood()
         {
