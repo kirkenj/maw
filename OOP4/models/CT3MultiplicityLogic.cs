@@ -2,7 +2,7 @@
 
 namespace OOP4.models
 {
-    public static class CT3Multiplicity
+    public static class CT3MultiplicityLogic
     {
         
         static int[] PRIME_MAS = { 2, 3, 5, 7, 11, 17, 19 };

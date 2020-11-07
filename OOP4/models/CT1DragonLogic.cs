@@ -14,25 +14,24 @@
 
             const int START_HEADS = 3;
             int age = dragon.Age;
-            int ret = 0;
             
 
             if (age >= 0)
             {
                 if (age <= FIRST_PERIOD)
                 {
-                    ret = START_HEADS + age * HEADS_PER_YEAR_1ST_PERIOD;
+                    return START_HEADS + age * HEADS_PER_YEAR_1ST_PERIOD;
                 }
                 else if (age <= SECOND_PERIOD)
                 {
-                    ret = START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + (age - FIRST_PERIOD) * HEADS_PER_YEAR_2ND_PERIOD;
+                    return START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + (age - FIRST_PERIOD) * HEADS_PER_YEAR_2ND_PERIOD;
                 }
                 else if (age > SECOND_PERIOD)
                 {
-                    ret = START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRST_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3RD_PERIOD;
+                    return  START_HEADS + FIRST_PERIOD * HEADS_PER_YEAR_1ST_PERIOD + HEADS_PER_YEAR_2ND_PERIOD * SECOND_PERIOD + (age - (FIRST_PERIOD + SECOND_PERIOD)) * HEADS_PER_YEAR_3RD_PERIOD;
                 }
             }
-            return ret;
+            return 0;
         }
     }
 }
