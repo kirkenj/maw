@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP4.models
 {
-    public class B4NumberInWordsLogic
+    public static class B4NumberInWordsLogic
     {
         private static int[] GetDigits(int number)
         {
