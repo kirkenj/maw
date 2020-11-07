@@ -14,10 +14,7 @@ namespace OOP4.IndividualTaskB
             {
                 return $"Your card is {values[value - 6]} {suits[suit - 1]}";
             }
-            else
-            {
-                return "Wrong input";
-            }
+            return "Wrong input";
         }
     }
 }
