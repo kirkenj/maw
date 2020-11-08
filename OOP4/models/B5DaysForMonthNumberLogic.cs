@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP4.models
 {
-    public static class B5Logic
+    public static class B5DaysForMonthNumberLogic
     {
         public static int GetDaysInMonthNumber(int monthNumber)
         {

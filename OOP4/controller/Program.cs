@@ -44,8 +44,8 @@ namespace OOP4
             OutlnConsole.Print(B4AgeInWords.GetStringOfAge(110));
 
 
-            OutlnConsole.Print(B5Logic.GetDaysInMonthNumber(12));
-            OutlnConsole.Print(B6Logic.MonthName(12));
+            OutlnConsole.Print(B5DaysForMonthNumberLogic.GetDaysInMonthNumber(12));
+            OutlnConsole.Print(B6MonthNameForNumberLogic.MonthName(12));
 
             string[] inp = ("12 * 5".Split());
             if (inp.Length == 3)
@@ -57,7 +57,7 @@ namespace OOP4
                 OutlnConsole.Print("Input in format: *Operand_1* *Action* *Operand_2*");
             }
 
-            OutlnConsole.Print(B8AstrologyLogic.GetZnakForBirthDay(23, 10));
+            OutlnConsole.Print(B8AstrologyLogic.GetZodiakForBirthDay(23, 10));
 
             OutlnConsole.Print(B9StringForNumber.GetStringForNumber(999));
             OutlnConsole.Print(B9StringForNumber.GetStringForNumber(1000));

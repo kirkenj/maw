@@ -14,6 +14,7 @@
 
 
 
+        private int heads;
         private int age;
 
         public int Age
@@ -30,7 +31,6 @@
                 }
             }
         }
-        private int heads;
         public int Heads
         {
             get

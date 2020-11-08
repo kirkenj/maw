@@ -15,7 +15,7 @@ namespace OOP4.models
 											  { 21,  1},		/*Aquarius*/    { 21,  2}      /*Pisces*/};
 		//array elements determine intervals of zodiaks. In comments u can see for wich zodiac each period is.
 		//first element of the array pair determines the day since wich the following period starts
-		public static string GetZnakForBirthDay(int birthDay, int birthMonth)
+		public static string GetZodiakForBirthDay(int birthDay, int birthMonth)
 		{
 			if (birthDay > 31 || birthDay < 1 || birthMonth>12 || birthMonth<1)
             {
