@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.CompilerServices;
 using System;
+using System.Linq;
 
 namespace OOP4
 {
@@ -52,13 +53,7 @@ namespace OOP4
                 {
                     string m = UserInput.AString();
                     string[] mas = m.Split();
-                    int len = mas.Length;
-                    double[] ret = new double[len];
-                    for (int i = 0; i < len; i++)
-                    {
-                        ret[i] = Convert.ToDouble(mas[i]);
-                    }
-                    return ret;
+                    return mas.Select(x => Convert.ToDouble(x)).ToArray();
                 }
                 catch (Exception ex)
                 {
