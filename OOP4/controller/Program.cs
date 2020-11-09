@@ -16,27 +16,27 @@ namespace OOP4
             //OutlnConsole.Print($"He has {dragon.Heads} heads with {dragon.Eyes} eyes");
 
 
-            //double[] arr = UserInput.ADoubleArray();
-            //OutlnConsole.Print($"Maximal element is {arr.Max()}");
+            double[] arr = UserInput.ADoubleArray();
+            OutlnConsole.Print($"Maximal element is {arr.Max()}");
 
-            //OutlnConsole.Print(CT3MultiplicityLogic.GetMultiplePrimeForInp(UserInput.AnInt()));
+        //    OutlnConsole.Print(CT3MultiplicityLogic.GetMultiplePrimeForInp(UserInput.AnInt()));
 
-            //A5Pie pie = new A5Pie();
-            //OutlnConsole.Print(A5PieLogic.EatPie(pie));
+        //    A5Pie pie = new A5Pie();
+        //    OutlnConsole.Print(A5PieLogic.EatPie(pie));
 
-            //A4Dice d1 = new A4Dice();
-            //A4Dice d2 = new A4Dice();
+        //    A4Dice d1 = new A4Dice();
+        //    A4Dice d2 = new A4Dice();
 
-            //A4DiceLogic.ShowValues(d1, d2);
-            //OutlnConsole.Print(A4DiceLogic.ShowValues(d1, d2));
+        //    A4DiceLogic.ShowValues(d1, d2);
+        //    OutlnConsole.Print(A4DiceLogic.ShowValues(d1, d2));
 
-            //OutlnConsole.Print(A3MoodSensorLogic.GetMood());
+        //    OutlnConsole.Print(A3MoodSensorLogic.GetMood());
 
 
 
-            //OutlnConsole.Print(A1Logic.IsSitesOfTriange(2.5, 2.5, 6));
-            OutlnConsole.Print(A2Logic.IsVowel('q'));
-            OutlnConsole.Print(A2Logic.IsVowel('a'));
+        //    OutlnConsole.Print(A1Logic.IsSitesOfTriange(2.5, 2.5, 6));
+        //    OutlnConsole.Print(A2Logic.IsVowel('q'));
+        //    OutlnConsole.Print(A2Logic.IsVowel('a'));
 
         //    OutlnConsole.Print(B1WeekLogic.GetDayForNumber(3));
         //    OutlnConsole.Print(B2MarkRequestLogic.GetRequestForMark(7));
