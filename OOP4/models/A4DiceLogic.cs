@@ -2,9 +2,9 @@ namespace OOP4.models
 {
     public static class A4DiceLogic
     {
-        public static int ShowValues(A4Dice First, A4Dice Second)
+        public static int ShowValues(A4Dice first, A4Dice second)
         {
-            return First.RoolTheDice() + Second.RoolTheDice();
+            return first.RoolTheDice() + second.RoolTheDice();
         }
     }
 }
