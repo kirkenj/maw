@@ -6,6 +6,7 @@ namespace OOP4.models
 {
 	public static class B8AstrologyLogic
 	{
+		static int IF_OUT_OF_RANGE = 11;
 		static string[] ZODIAKS = { "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces" };
 		static int[,] PERIODS ={			  { 21,  3},        /*Aries*/       { 21,  4},	   /*Taurus*/
 											  { 21,  5},		/*Gemini*/		{ 22,  6},	   /*Cancer*/
@@ -31,7 +32,7 @@ namespace OOP4.models
 			{
 				if (i == 0) 
 				{ 
-					i = 11; 
+					i = IF_OUT_OF_RANGE; 
 				} 
 				else 
 				{
