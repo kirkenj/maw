@@ -17,7 +17,7 @@ namespace OOP4.models
 		//first element of the array pair determines the day since wich the following period starts
 		public static string GetZodiakForBirthDay(int birthDay, int birthMonth)
 		{
-			if (birthDay > 31 || birthDay < 1 || birthMonth>12 || birthMonth<1)
+			if (birthDay > B5DaysForMonthNumberLogic.GetDaysInMonthNumber(birthMonth) || birthDay < 1 || birthMonth>12 || birthMonth<1)
             {
 				return "Wrong Input";
             }

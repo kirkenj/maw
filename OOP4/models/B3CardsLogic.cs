@@ -7,8 +7,7 @@ namespace OOP4.IndividualTaskB
 
         public static string GetCardForNumbers(int suit, int value)
         {
-            //вопрос по объявлению константного массива строк
-            string[] suits = { "Spades", "Hearts", "Crosses", "Tambourine" };
+            string[] suits = { "Spades", "Hearts", "Clubs", "Diamonds" };
             string[] values = new string[] { "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
             if (suit >= 1 && suit <= 4 && value >= 6 && value <= 14)
             {
