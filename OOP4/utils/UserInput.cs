@@ -7,67 +7,68 @@ namespace OOP4
     static class UserInput
     {
 
-        public static int AnInt()
+        public static int GetInt()
         {
 
             while (true)
             {
                 try
                 {
-                    return Convert.ToInt32(AString());
+                    return Convert.ToInt32(GetString());
                 }
                 catch (Exception ex)
                 {
-                    OutlnConsole.Print(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
             }
 
 
         }
 
-        public static double ADouble()
+        public static double GetDouble()
         {
             while (true)
             {
                 try
                 {
-                    return Convert.ToDouble(AString());
+                    return Convert.ToDouble(GetString());
                 }
                 catch (Exception ex)
                 {
-                    OutlnConsole.Print(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
             }
         }
-        public static string AString()
+        public static string GetString()
         {   
             return Console.ReadLine();
         }
 
 
-        public static double[] ADoubleArray()
+        public static double[] GetDoubleArray()
         {
             while (true)
             {
                 try
                 {
-                    string m = UserInput.AString();
-                    string[] mas = m.Split();
-                    return mas.Select(x => Convert.ToDouble(x)).ToArray();
+                    return GetString()
+                        .Split()
+                        .Select(x => Convert.ToDouble(x))
+                        .ToArray();
                 }
                 catch (Exception ex)
                 {
-                    OutlnConsole.Print(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
             }
             
         }
 
-        public static char AChar(){
+        public static char GetChar(){
             string m = "err";
             while (m.Length!=1)
             {
-                m = AString();
+                m = GetString();
             }
             return m[0];
         }

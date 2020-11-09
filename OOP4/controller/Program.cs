@@ -16,7 +16,7 @@ namespace OOP4
             //OutlnConsole.Print($"He has {dragon.Heads} heads with {dragon.Eyes} eyes");
 
 
-            double[] arr = UserInput.ADoubleArray();
+            double[] arr = UserInput.GetDoubleArray();
             OutlnConsole.Print($"Maximal element is {arr.Max()}");
 
         //    OutlnConsole.Print(CT3MultiplicityLogic.GetMultiplePrimeForInp(UserInput.AnInt()));
