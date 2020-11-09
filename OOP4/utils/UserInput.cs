@@ -54,7 +54,7 @@ namespace OOP4
                     string[] mas = m.Split();
                     int len = mas.Length;
                     double[] ret = new double[len];
-                    for (int i = 0; i < mas.Length; i++)
+                    for (int i = 0; i < len; i++)
                     {
                         ret[i] = Convert.ToDouble(mas[i]);
                     }
