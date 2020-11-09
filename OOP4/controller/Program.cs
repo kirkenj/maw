@@ -8,59 +8,59 @@ namespace OOP4
     {
         static void Main(string[] args)
         {
-            CT1Dragon dragon = new CT1Dragon();
-            OutlnConsole.Print("Input Dragon's age: ");
-            int m = UserInput.AnInt();
-            dragon.Age = m;
-            dragon.Heads = CT1DragonLogic.CountHeadsForAge(dragon);
-            OutlnConsole.Print($"He has {dragon.Heads} heads with {dragon.Eyes} eyes");
+            //CT1Dragon dragon = new CT1Dragon();
+            //OutlnConsole.Print("Input Dragon's age: ");
+            //int m = UserInput.AnInt();
+            //dragon.Age = m;
+            //dragon.Heads = CT1DragonLogic.CountHeadsForAge(dragon);
+            //OutlnConsole.Print($"He has {dragon.Heads} heads with {dragon.Eyes} eyes");
 
 
-            double[] arr = UserInput.ADoubleArray();
-            OutlnConsole.Print($"Maximal element is {arr.Max()}");
+            //double[] arr = UserInput.ADoubleArray();
+            //OutlnConsole.Print($"Maximal element is {arr.Max()}");
 
-            OutlnConsole.Print(CT3MultiplicityLogic.GetMultiplePrimeForInp(UserInput.AnInt()));
+            //OutlnConsole.Print(CT3MultiplicityLogic.GetMultiplePrimeForInp(UserInput.AnInt()));
 
-            A5Pie pie = new A5Pie();
-            OutlnConsole.Print(A5PieLogic.EatPie(pie));
+            //A5Pie pie = new A5Pie();
+            //OutlnConsole.Print(A5PieLogic.EatPie(pie));
 
-            A4Dice d1 = new A4Dice();
-            A4Dice d2 = new A4Dice();
+            //A4Dice d1 = new A4Dice();
+            //A4Dice d2 = new A4Dice();
 
-            A4DiceLogic.ShowValues(d1, d2);
-            OutlnConsole.Print(A4DiceLogic.ShowValues(d1, d2));
+            //A4DiceLogic.ShowValues(d1, d2);
+            //OutlnConsole.Print(A4DiceLogic.ShowValues(d1, d2));
 
-            OutlnConsole.Print(A3MoodSensorLogic.GetMood());
+            //OutlnConsole.Print(A3MoodSensorLogic.GetMood());
 
 
 
-            OutlnConsole.Print(A1Logic.IsSitesOfTriange(2.5, 2.5, 6));
+            //OutlnConsole.Print(A1Logic.IsSitesOfTriange(2.5, 2.5, 6));
             OutlnConsole.Print(A2Logic.IsVowel('q'));
             OutlnConsole.Print(A2Logic.IsVowel('a'));
 
-            OutlnConsole.Print(B1WeekLogic.GetDayForNumber(3));
-            OutlnConsole.Print(B2MarkRequestLogic.GetRequestForMark(7));
-            OutlnConsole.Print(B3CardsLogic.GetCardForNumbers(1, 8));
-            OutlnConsole.Print(B4AgeInWords.GetStringOfAge(110));
+        //    OutlnConsole.Print(B1WeekLogic.GetDayForNumber(3));
+        //    OutlnConsole.Print(B2MarkRequestLogic.GetRequestForMark(7));
+        //    OutlnConsole.Print(B3CardsLogic.GetCardForNumbers(1, 8));
+        //    OutlnConsole.Print(B4AgeInWords.GetStringOfAge(110));
 
 
-            OutlnConsole.Print(B5DaysForMonthNumberLogic.GetDaysInMonthNumber(12));
-            OutlnConsole.Print(B6MonthNameForNumberLogic.MonthName(12));
+        //    OutlnConsole.Print(B5DaysForMonthNumberLogic.GetDaysInMonthNumber(12));
+        //    OutlnConsole.Print(B6MonthNameForNumberLogic.MonthName(12));
 
-            string[] inp = ("12 * 5".Split());
-            if (inp.Length == 3)
-            {
-                OutlnConsole.Print(B7ArithmethicLogic.DoArithmetic(System.Convert.ToDouble(inp[0]), inp[1], System.Convert.ToDouble(inp[2])));
-            }
-            else
-            {
-                OutlnConsole.Print("Input in format: *Operand_1* *Action* *Operand_2*");
-            }
+        //    string[] inp = ("12 * 5".Split());
+        //    if (inp.Length == 3)
+        //    {
+        //        OutlnConsole.Print(B7ArithmethicLogic.DoArithmetic(System.Convert.ToDouble(inp[0]), inp[1], System.Convert.ToDouble(inp[2])));
+        //    }
+        //    else
+        //    {
+        //        OutlnConsole.Print("Input in format: *Operand_1* *Action* *Operand_2*");
+        //    }
 
-            OutlnConsole.Print(B8AstrologyLogic.GetZodiakForBirthDay(23, 10));
+        //    OutlnConsole.Print(B8AstrologyLogic.GetZodiakForBirthDay(23, 10));
 
-            OutlnConsole.Print(B9StringForNumber.GetStringForNumber(999));
-            OutlnConsole.Print(B9StringForNumber.GetStringForNumber(1000));
+        //    OutlnConsole.Print(B9StringForNumber.GetStringForNumber(999));
+        //    OutlnConsole.Print(B9StringForNumber.GetStringForNumber(1000));
         }
     }
 }

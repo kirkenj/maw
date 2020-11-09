@@ -8,22 +8,22 @@ namespace OOP4.models
 {
     public static class B7ArithmethicLogic
     {
-        private static double Sum(double a, double b)
+        private static double GetSum(double a, double b)
         { 
             return a + b;
         }
 
-        private static double Dif(double a, double b)
+        private static double GetDif(double a, double b)
         {
             return a - b;
         }
 
-        private static double Mul(double a, double b)
+        private static double GetMul(double a, double b)
         {
             return a * b;
         }
 
-        private static double Dev(double a,double b)
+        private static double GetDev(double a,double b)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace OOP4.models
                 return -1;
             }
         }
-        private static double Mod(double a,double b)
+        private static double GetMod(double a,double b)
         {
             try
             {
@@ -53,23 +53,23 @@ namespace OOP4.models
             {
                 case "+":
                     {
-                        return Sum(aOperand, bOperand);
+                        return GetSum(aOperand, bOperand);
                     }
                 case "-":
                     {
-                        return Dif(aOperand,bOperand);
+                        return GetDif(aOperand,bOperand);
                     }
                 case "*":
                     {
-                        return Mul(aOperand,bOperand);
+                        return GetMul(aOperand,bOperand);
                     }
                 case "/":
                     {
-                        return Dev(aOperand,bOperand);
+                        return GetDev(aOperand,bOperand);
                     }
                 case "%":
                     {
-                        return Mod(aOperand,bOperand);
+                        return GetMod(aOperand,bOperand);
                     }
                 default:
                     {

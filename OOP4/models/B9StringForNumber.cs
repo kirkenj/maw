@@ -25,7 +25,7 @@ namespace OOP4.models
             return listOfNumbers.ToArray();
         }
 
-        private static string ForLess10(int units)
+        private static string GetStrForLess10(int units)
         {
             if (units > 9 || units < 0)
             {
@@ -34,7 +34,7 @@ namespace OOP4.models
             return UNITS_STR[units];
         }
 
-        private static string ForLess100(int dozens, int units)
+        private static string GetStrForLess100(int dozens, int units)
         {
             
             if ((units > 9 || units < 0) || (dozens > 9 || dozens < 0))
@@ -45,16 +45,16 @@ namespace OOP4.models
             {
                 return UNITS_FROM_11_TO_19[units - 1];
             }
-            return $"{DOZENS_STR[dozens]} {ForLess10(units)}";
+            return $"{DOZENS_STR[dozens]} {GetStrForLess10(units)}";
         }
 
-        private static string ForMore100(int hundreeds, int dozens, int units)
+        private static string GetStrForMore100(int hundreeds, int dozens, int units)
         {
             if ((units > 9 || units < 0) || (dozens > 9 || dozens < 0) || (hundreeds > 9 || hundreeds < 1))
             {
                 return "Wrong Input";
             }
-            return $"{HUNDREEDS_STR[hundreeds - 1]} {ForLess100(dozens, units)}";
+            return $"{HUNDREEDS_STR[hundreeds - 1]} {GetStrForLess100(dozens, units)}";
         }
 
         public static string GetStringForNumber(int number)
@@ -70,15 +70,15 @@ namespace OOP4.models
             {
                 case 3:
                     {
-                        return ForMore100(digits[0], digits[1], digits[2]);
+                        return GetStrForMore100(digits[0], digits[1], digits[2]);
                     }
                 case 2:
                     {
-                        return ForLess100(digits[0], digits[1]);
+                        return GetStrForLess100(digits[0], digits[1]);
                     }
                 case 1:
                     {
-                        return ForLess10(digits[0]);
+                        return GetStrForLess10(digits[0]);
                     }
                 default:
                     {

@@ -2,7 +2,7 @@ namespace OOP4.models
 {
     public static class B6MonthNameForNumberLogic
     {
-        public static string MonthName(int num)
+        public static string GetMonthName(int num)
         {
             string[]  mounth = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
             if (num >= 1 && num <= mounth.Length)
